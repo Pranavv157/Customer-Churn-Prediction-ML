@@ -8,7 +8,7 @@ model = joblib.load("churn_model.pkl")
 
 sample = pd.read_csv("sample_features.csv")  
 
-st.title("Customer Churn Prediction App")
+st.title("Customer Churn Prediction")
 
 st.write("Enter customer details to predict churn.")
 
@@ -99,3 +99,4 @@ if st.button("Predict"):
         st.error("⚠ Customer will CHURN!")
     else:
         st.success("✔ Customer will NOT churn.")
+
